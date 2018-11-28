@@ -39,7 +39,7 @@ Two quick start options are available:
     `python run.py`
 
 ## Project motivation
-For the second term of the nanodegree [become a data scientist](https://eu.udacity.com/course/data-scientist-nanodegree--nd025) of [Udacity](https://eu.udacity.com/) I got involved in this project. I was particular interested in trying new machine learning algorithms to help [Figure Eight](https://www.figure-eight.com/).  
+For the second term of the nanodegree [become a data scientist](https://eu.udacity.com/course/data-scientist-nanodegree--nd025) of [Udacity](https://eu.udacity.com/) I got involved in this project. I was particular interested in trying new machine learning algorithms to help [Figure Eight](https://www.figure-eight.com/) detect what messages are actually need attention during the event of a disaster.  
 
 ## File descriptions
 
@@ -87,4 +87,4 @@ Thanks to [Udacity](https://eu.udacity.com/) for setting up the projects where w
   <img src="https://upload.wikimedia.org/wikipedia/en/a/a6/Attached_to_figure-eight-dot-com.png" alt="Figure Eight Logo">
 </a>
 
-Thanks to [Figure Eight](https://www.figure-eight.com/) for providing cool data and setting up a cutting edge project!
+Thanks to [Figure Eight](https://www.figure-eight.com/) for providing cool data with which we can create a cutting edge project!
