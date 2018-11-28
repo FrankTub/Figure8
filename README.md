@@ -3,6 +3,7 @@
 ## Table of contents
 
 - [Installation](#installation)
+- [Instructions](#instructions)
 - [Project motivation](#project-motivation)
 - [File descriptions](#file-descriptions)
 - [Results](#results)
@@ -25,6 +26,17 @@ For this project a SQLite database was used on my local machine. If you want to 
 Two quick start options are available:
 - [Download the latest release.](https://github.com/FrankTub/Figure8/zipball/master/)
 - Clone the repo: `git clone https://github.com/FrankTub/Figure8.git`
+
+### Instructions:
+1. Run the following commands in the project's root directory to set up your database and model.
+
+    - To run ETL pipeline that cleans data and stores in database
+        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
+    - To run ML pipeline that trains classifier and saves
+        `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
+
+2. Run the following command in the app's directory to run your web app.
+    `python run.py`
 
 ## Project motivation
 For the second term of the nanodegree [become a data scientist](https://eu.udacity.com/course/data-scientist-nanodegree--nd025) of [Udacity](https://eu.udacity.com/) I got involved in this project. I was particular interested in trying new machine learning algorithms to help [Figure Eight](https://www.figure-eight.com/).  
