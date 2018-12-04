@@ -20,6 +20,7 @@ Run the following commands in anaconda prompt to be able to run the scripts that
 - `conda install pandas`
 - `conda install numpy`
 - `conda install -c conda-forge nltk_data`
+- `conda install joblib`
 
 For this project a SQLite database was used on my local machine. If you want to follow along and execute these scripts you will need to [install SQLite](http://www.sqlitetutorial.net/download-install-sqlite/) on your machine.
 
