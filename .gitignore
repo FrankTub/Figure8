@@ -3,3 +3,4 @@ __pycache__/
 .git/
 DisasterResponse.db
 data/Twitter-sentiment-self-drive-DFE.csv
+models/classifier.pkl

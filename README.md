@@ -42,7 +42,7 @@ Two quick start options are available:
     `python run.py`
 
 ## Project motivation
-For the second term of the nanodegree [become a data scientist](https://eu.udacity.com/course/data-scientist-nanodegree--nd025) of [Udacity](https://eu.udacity.com/) I got involved in this project. I was particular interested in trying new machine learning algorithms to help [Figure Eight](https://www.figure-eight.com/) detect what messages are actually need attention during the event of a disaster.  
+For the second term of the nanodegree [become a data scientist](https://eu.udacity.com/course/data-scientist-nanodegree--nd025) of [Udacity](https://eu.udacity.com/) I got involved in this project. I was particular interested in trying new machine learning algorithms to help [Figure Eight](https://www.figure-eight.com/) detect what messages are actually need attention during the event of a disaster. It was very interesting to try out the NLTK library and see how much of the coding is already done for you.
 
 ## File descriptions
 
@@ -55,21 +55,21 @@ Figure8/
 ├── ML Pipeline Preparation.ipynb # Notebook to test out machine learning algorithms
 ├── app/
     ├──	run.py # Flask file that runs app
-    ├── template/
+    ├── templates/
     |       ├──	master.html  # main page of web app
     |       └── go.html  # classification result page of web app  
 ├── data/
     ├── categories.csv  # data to process
     ├──	messages.csv  # data to process
     ├── process_data.py
-    └── InsertDatabaseName.db   # database to save clean data to
+    └── DisasterResponse.db   # database to save clean data to
 └── models/
     ├── train_classifier.py
-    └──	classifier.pkl  # saved model
+    └──	classifier.pkl  # saved model, not stored in github repository due to size, run ML pipeline to create this model.
 ```
 
 ## Results
-
+The model does not perform very well. I've tried some optimization techniques to increase the predictability of the model, but this did not led to an increase of correct predictions. One of the reasons this model did not perform well might be that the data is very skewed, some categories are very rare in the provided dataset, therefore making it hard for algorithms to make correct predictions on these rare conditions.
 
 ## Creator
 
