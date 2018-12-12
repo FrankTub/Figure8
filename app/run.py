@@ -8,9 +8,9 @@ from nltk.tokenize import word_tokenize
 from flask import Flask
 from flask import render_template, request, jsonify
 from plotly.graph_objs import Bar
-from sklearn.externals import joblib
-from sqlalchemy import create_engine
-
+from joblib import load
+# Setting up connection to sqlite
+import sqlite3
 
 app = Flask(__name__)
 
@@ -26,18 +26,18 @@ def tokenize(text):
     return clean_tokens
 
 # load data
-engine = create_engine('sqlite:///../data/YourDatabaseName.db')
-df = pd.read_sql_table('YourTableName', engine)
+conn = sqlite3.connect('../data/DisasterResponse.db')
+# load data from database, the tablename is hardcoded in the script that performs the ETL.
+df = pd.read_sql('SELECT * FROM messages', conn)
 
 # load model
-model = joblib.load("../models/your_model_name.pkl")
-
+model = load("../models/classifier.pkl")
 
 # index webpage displays cool visuals and receives user input text for model
 @app.route('/')
 @app.route('/index')
 def index():
-    
+
     # extract data needed for visuals
     # TODO: Below is an example - modify to extract data for your own visuals
     genre_counts = df.groupby('genre').count()['message']
