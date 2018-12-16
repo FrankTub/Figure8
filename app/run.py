@@ -39,9 +39,11 @@ model = load("../models/classifier.pkl")
 def index():
 
     # extract data needed for visuals
-    # TODO: Below is an example - modify to extract data for your own visuals
     genre_counts = df.groupby('genre').count()['message']
     genre_names = list(genre_counts.index)
+    
+    request_counts = df.groupby('request').count()['message']
+    request_names = ['no', 'yes']
     
     # create visuals
     # TODO: Below is an example - modify to create your own visuals
@@ -61,6 +63,24 @@ def index():
                 },
                 'xaxis': {
                     'title': "Genre"
+                }
+            }
+        },
+        {
+            'data': [
+                Bar(
+                    x=request_names,
+                    y=request_counts
+                )
+            ],
+
+            'layout': {
+                'title': 'Distribution of Request messages',
+                'yaxis': {
+                    'title': "Count"
+                },
+                'xaxis': {
+                    'title': "Request"
                 }
             }
         }
