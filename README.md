@@ -40,6 +40,9 @@ Two quick start options are available:
 
 2. Run the following command in the app's directory to run your web app.
     `python run.py`
+    
+3. Open your favorite browser and navigate to the following URL:
+    `http://localhost:3001`
 
 ## Project motivation
 For the second term of the nanodegree [become a data scientist](https://eu.udacity.com/course/data-scientist-nanodegree--nd025) of [Udacity](https://eu.udacity.com/) I got involved in this project. I was particular interested in trying new machine learning algorithms to help [Figure Eight](https://www.figure-eight.com/) detect what messages actually need attention during the event of a disaster. It was very interesting to try out the NLTK library and see how much of the coding is already done for you.
